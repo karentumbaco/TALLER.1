@@ -1,0 +1,89 @@
+.header,
+.footer,
+.sidebar,
+.main {
+padding: 80px;
+}
+.marco{
+padding:9px;
+background-color: #13e2b5;
+width: 200px;
+border-bottom: 2px solid #000000;
+border-right: 2px solid #000000;
+border-left: 2px #000000;
+}
+.marco img{
+text-align: center;
+display: block;
+margin: auto;
+border: 1px solid #000000;
+}
+table{
+width: 80%;
+border: 2px solid rgb(255, 255, 255);
+background-color: #db1471;
+text-align: center;
+border-collapse: collapse;
+margin: 0 0 6em 0;
+caption-side: top;
+}
+th td{
+border-bottom: 2px solid rgb(0, 0, 0);
+width: 15%;
+}
+.aboutle{
+text-align:center;
+}
+.header {
+color: rgb(22, 6, 6);
+background-color: #6a2f91;
+}
+.footer {
+background-color: #1bc0d6;
+}
+.main {
+background-color: #bbe7a7;
+font-family:Arial, Helvetica, sans-serif;
+}
+.sidebar {
+background-color: #eeeeee;
+}
+body {
+margin: 0 auto;
+}
+.container {
+display: grid;
+grid-template-columns: 1fr 1fr ;
+column-gap: 1%;
+text-align: center;
+grid-template-rows: auto auto auto ;
+row-gap: 2%;
+}
+.header,
+.footer {
+grid-column:span 3;
+}
+.header,
+.footer {
+grid-column-start: 1;
+grid-column-end: 3;
+}
+.header {
+grid-row: 1; 
+}
+.footer {
+grid-row: 3;
+}
+.sidebar {
+grid-column: 1;
+grid-row: 2;
+}
+.main {
+grid-column: 2;
+grid-row: 2;
+}
+@media (max-width: 400px) {
+.container {
+display: block;
+}
+}
